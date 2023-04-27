@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+body {
+  font-size: 16px;
+  background-image: url(atmosphere.jpg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+.w3-half img {
+  margin-bottom: -6px;
+  margin-top: 16px;
+  opacity: 0.8;
+  cursor: pointer
+}
+
+.w3-half img:hover {
+  opacity: 1
+}
+
+#text1 {
+  color: black;
+  background-color: rgba(140, 194, 210, 0.623);
+  border-radius: 20px;
+  text-align: center;
+}
+
+#text2 {
+  color: white;
+  background-color: rgba(128, 128, 128, 0.79);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#i {
+  width: 20%;
+  height: 40%;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .w3-sidebar {
+    display: none;
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .w3-padding-64 {
+    padding-top: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>SciRealm</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+      <a href="room1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Room 1</a>
+      <a href="room2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Room 2</a>
+      <a href="room3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Room 3</a>
+      <a href="room4.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Room 4</a>
+      <a href="room5.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Room 5</a>
+    </div>
+  </nav>
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>SciRealm</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b id="text1">Atmosphere </b></h1>
+
+    </div>
+<div id="text2">
+  The atmosphere is a layer of gas that surrounds the Earth and is held in place by the Earth's gravity. It is divided into four main layers based on its composition, temperature, and other physical properties: the troposphere, stratosphere, mesosphere, and thermosphere. The troposphere is the lowest layer of the atmosphere and extends from the earth's surface up to 8-15 kilometers (5-9 miles). The stratosphere contains the ozone layer which absorbs ultraviolet radiation from the sun and increases with altitude. The mesosphere extends up to 85 kilometers (53 miles) and is characterized by low temperatures.
+<br><br>
+The thermosphet is the layer above the mesosphere and extending up to 600 kilometers (372 miles). It contains the ionosphere, ionization of gases, aurora borealis, and aurora australis. The atmosphere plays a crucial role in supporting life on Earth by absorbing and reflecting solar radiation, as well as protecting the Earth from harmful solar radiation and meteoroids.
+</div>
+<br>
+<br>
+<img id="i" src="bio1.jpg">
+<img id="i" src="bio2.jpg">
+<img id="i" src="bio3.jpg">
+<br>
+<br>
+<div id="text2">
+  Learning about the atmosphere is crucial for several reasons. It helps us understand weather patterns, climate change, air quality, and space exploration. By studying the atmosphere, we can make more accurate weather forecasts, develop strategies to mitigate the effects of climate change, monitor and control air pollution, and explore space. Overall, understanding the atmosphere is essential for a range of scientific and practical applications.
+</div>
+  </div>
+
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+
+</body>
+
+</html>

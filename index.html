@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Environmental Culminating</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 16px;
+      background-image: url(musuem2.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+    }
+
+    .w3-half img {
+      margin-bottom: -6px;
+      margin-top: 16px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-half img:hover {
+      opacity: 1;
+    }
+
+    #text1 {
+      color: black;
+      background-color: rgba(140, 194, 210, 0.815);
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    #text2 {
+      color: white;
+      background-color: rgba(128, 128, 128, 0.79);
+      border-radius: 20px;
+      text-align: center;
+      font-size: 20px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    #i {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 992px) {
+      .w3-sidebar {
+        display: none;
+      }
+
+      .w3-main {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      #text1 {
+        font-size: 2rem;
+      }
+
+      #text2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+  id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>SciRealm</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-white">About</a>
+      <a href="room1.html" class="w3-bar-item w3-button w3-hover-white">Room 1</a>
+      <a href="room2.html" class="w3-bar-item w3-button w3-hover-white">Room 2</a>
+      <a href="room3.html" class="w3-bar-item w3-button w3-hover-white">Room 3</a>
+      <a href="room4.html" class="w3-bar-item w3-button w3-hover-white">Room 4</a>
+      <a href="room5.html" class="w3-bar-item w3-button w3-hover-white">Room 5</a>
+    </div>
+  </nav>
+
+
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>SciRealm</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b id="text1">SciRealm Virtual Museum</b></h1>
+      <h2 id="text1">About Page</h2>
+
+    </div>
+    <div id="text2">
+      Hi, I'm Nathan Harvey, and welcome to my virtual museum. I'm a 17-year-old student at Canyon View Highschool, and
+      my passion for technology and computer science stems from my love of taking things apart and rebuilding them. This
+      began when I was just seven years old and started playing with Legos, but it really took off when I was faced with
+      a broken camera, and my dad challenged me to fix it without breaking it further. From that day on, I became
+      fascinated with how technology works, leading me to pursue my passion for coding and web development. In fact,
+      this entire presentation is a result of what I've learned in my studies. I hope you enjoy exploring my virtual
+      museum.</div>
+    <img id="i" src="beanman.png">
+
+  </div>
+
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+
+</body>
+
+</html>

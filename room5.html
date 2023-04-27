@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+body {
+  font-size: 16px;
+  background-image: url(soil.jpg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+.w3-half img {
+  margin-bottom: -6px;
+  margin-top: 16px;
+  opacity: 0.8;
+  cursor: pointer
+}
+
+.w3-half img:hover {
+  opacity: 1
+}
+
+#text1 {
+  color: black;
+  background-color: rgba(140, 194, 210, 0.623);
+  border-radius: 20px;
+  text-align: center;
+}
+
+#text2 {
+  color: white;
+  background-color: rgba(128, 128, 128, 0.79);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#i {
+  width: 20%;
+  height: 40%;
+}
+
+#i2{
+  width: 20%;
+  height: 40%;
+  margin-left: 100%;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .w3-sidebar {
+    display: none;
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .w3-padding-64 {
+    padding-top: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>SciRealm</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+      <a href="room1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Room 1</a>
+      <a href="room2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Room 2</a>
+      <a href="room3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Room 3</a>
+      <a href="room4.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Room 4</a>
+      <a href="room5.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Room 5</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>ScieRealm</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b id="text1">Soil(ent) Green</b></h1>
+
+    </div>
+
+<div id="text2">
+
+  Soil is a natural resource that forms from a mixture of mineral particles, organic matter, water, air, and living organisms. It is the upper layer of the Earth's surface where plants grow and is essential for supporting life on our planet. Soil is classified based on its texture, structure, and composition, and is vital for a range of ecosystem services. However, it is threatened by human activities such as deforestation, agricultural practices, and urbanization, leading to soil degradation and loss.
+  <br<br>
+  <h3>Fun Fact about the assignment Soil(ent) Green</h3>
+  <br> Soilent Green, on the other hand, is a science fiction movie from 1973 that portrays a dystopian future where the population relies on processed food made from human remains, including dead bodies. The name Soylent Green comes from the food's brand name, and the movie's plot revolves around a character who discovers the truth behind the food's origin. The movie is a cautionary tale about the consequences of environmental degradation and the need for sustainable practices to ensure the health and well-being of our planet and its inhabitants.
+</div>
+<br>
+<br>
+<img id="i" src="dirt1.jpg">
+<img id="i" src="dirt2.jpg">
+<img id="i" src="dirt3.jpg">
+<br>
+<br>
+<div id="text2">
+  Soils are a crucial component of the Earth's ecosystems and play a vital role in supporting human life. Learning about soils is important for several reasons. Firstly, soils are the foundation for plant growth, and thus are essential for food production and sustaining terrestrial biodiversity. Understanding soil properties and processes is critical for maintaining healthy soils and increasing agricultural productivity. Secondly, soils are important for regulating the global carbon cycle and mitigating climate change. Soils store large amounts of carbon, and their management can either contribute to or help reduce greenhouse gas emissions. Thirdly, soils are a finite resource and their degradation can have negative impacts on the environment and human well-being. By understanding the properties and processes that govern soil formation and degradation, we can develop sustainable soil management practices that support both ecosystem health and human needs. Overall, learning about soils is critical for understanding and addressing environmental challenges such as food security, climate change, and soil degradation.
+</div>
+<br><br>
+<img id="i" src="soylent green.jpg">
+<div id="text2"><br> The title of this Assignment and Slide that I made about soils is based of the movie Soylent Green which is a movie taken place in a semi-apocolyptic world where they make this food ration thats called "soylent green" which they later find is made of people.<br><br></div>
+  </div>
+  
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+
+</body>
+
+</html>
